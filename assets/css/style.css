@@ -10,12 +10,12 @@
 }
 
 header {
-display: flex;
-justify-content: space-between;
-flex: wrap;
-background-color: var(--primary-color);
-color: var(--secondary-color);
-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 50px;
 }
 
 header h1 {
@@ -25,31 +25,31 @@ header h1 {
 }
 
 header h1 a {
-color: var(--secondary-color);
-text-decoration: none;
-margin-left: 10px;
-font-family: cursive;
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: cursive;
 }
 
 header nav {
-margin: 7px;
+    margin: 7px;
 }
 
 header nav ul {
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-align-items: center;
-list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
 }
 
 header nav ul li a {
-padding: 10px 15px;
-font-weight: lighter;
-font-size: 1.55vw;
-text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-text-decoration: none;
-color: var(--secondary-color);
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 .purp {
@@ -86,15 +86,20 @@ color: var(--secondary-color);
     text-align: center;
 }
 
-.about-row{
-padding-bottom: 50px;
-width: 80%;
-border-bottom: 1px solid #39a6b2;
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-between;
+.about-row {
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top-width: thick;
 }
+
+.about-p1 {
+    margin-top: 50px;
+} 
 
 .para-box {
     color: var(--tertiary-color);
@@ -105,31 +110,96 @@ justify-content: space-between;
     align-items: center;
 }
 
+#work {
+    margin-top: 50px;
+}
+
+.production h2 {
+    color: #024e76;
+    font-size: 60px;
+    flex: 1 26%;
+    text-align: center;
+    margin-right: 35px;
+}
+
+.production {
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .flex-container {
+    color: var(--tertiary-color);
+    font-size: 18px;
+    flex: 5 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*.flex-container {
     display: flex;
     flex: wrap;
     flex-direction: column;
     align-items: center;
     
-    /*flex-direction: column;*/
-}
+    /*flex-direction: column;
+}*/
 
-.flex-item {
-    width: 200px;
-    margin: 10px;
-    border: 3px solid #333;
-    background-color: green;
-}
+
 
 .one {
-min-height: 100px;
-width: 806px;
-height: 400px;
-background-image: url(../images/run-buddy.png);
-background-size: cover;
+    width: 800px;
+    height: 400px;
+    background-image: url(../images/run-buddy.png);
+    background-size: cover;
+    background-position:left;
+    outline: 3px solid #000000;
 }
 
-.two{
-    min-height: 50px;
+.two {
+    width: 400px;
+    height: 135px;
+    outline: 3px solid #000000;
+    margin-top: 40px;
+    background-image: url(../images/calorie-tracker.png);
+    background-size: 33.33%;
+    background-position:left;
 }
+
+.three {
+    width: 400px;
+    height: 135px;
+    outline: 3px solid #000000;
+    margin-top: 40px;
+    background-image: url(../images/fed-reserve.png);
+    background-size: 100%;
+    background-position:center;
+    
+}
+
+.four {
+    width: 400px;
+    height: 135px;
+    outline: 3px solid #000000;
+    margin-top: 40px;
+    background-image: url(../images/world-clock.png);
+    background-size: 70%;
+    background-position:center;
+}
+
+.five {
+    width: 400px;
+    height: 135px;
+    outline: 3px solid #000000;
+    margin-top: 40px;
+    background-image: url(../images/mobile-banking.png);
+    background-size: 100%;
+    background-position:top;
+}
+
 
