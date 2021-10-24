@@ -62,6 +62,19 @@ header nav ul li a {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    position: relative;
+}
+
+.purp h2 {
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    line-height: 1.2;
+    outline: 3px dotted purple;
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
 }
 
 #contents {
@@ -152,6 +165,27 @@ header nav ul li a {
     background-size: cover;
     background-position:left;
     outline: 3px solid #000000;
+    position: relative;
+}
+
+#container-one h2 {
+        width: 125px;
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.2;
+        background-color: green;
+        outline: 3px solid green;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+}
+
+#container-one a {
+    display: block; 
+    height:400px; 
+    width:800px; 
+    text-indent:-9999px;
 }
 
 #container-one:hover {
@@ -166,6 +200,27 @@ header nav ul li a {
     background-image: url(../images/calorie-tracker.png);
     background-size: 33.33%;
     background-position:left;
+    position: relative;
+}
+
+#container-two h2 {
+    width: 125px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.2;
+    background-color: green;
+    outline: 3px solid green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#container-two a {
+    display: block; 
+    height:135px; 
+    width:400px; 
+    text-indent:-9999px;
 }
 
 #container-two:hover {
@@ -180,7 +235,27 @@ header nav ul li a {
     background-image: url(../images/fed-reserve.png);
     background-size: 100%;
     background-position:center;
-    
+    position: relative;
+}
+
+#container-three h2 {
+    width: 125px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.2;
+    background-color: green;
+    outline: 3px solid green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#container-three a {
+    display: block; 
+    height:135px; 
+    width:400px; 
+    text-indent:-9999px;
 }
 
 #container-three:hover {
@@ -195,6 +270,27 @@ header nav ul li a {
     background-image: url(../images/world-clock.png);
     background-size: 70%;
     background-position:center;
+    position: relative;
+}
+
+#container-four h2 {
+    width: 125px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.2;
+    background-color: green;
+    outline: 3px solid green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#container-four a {
+    display: block; 
+    height:135px; 
+    width:400px; 
+    text-indent:-9999px;
 }
 
 #container-four:hover {
@@ -209,6 +305,27 @@ header nav ul li a {
     background-image: url(../images/mobile-banking.png);
     background-size: 100%;
     background-position:top;
+    position: relative;
+}
+
+#container-five h2 {
+    width: 125px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.2;
+    background-color: green;
+    outline: 3px solid green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#container-five a {
+    display: block; 
+    height:135px; 
+    width:400px; 
+    text-indent:-9999px;
 }
 
 #container-five:hover {
@@ -258,3 +375,122 @@ header nav ul li a {
     align-items: center;
 }
 
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: 0;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    header nav ul li a:hover {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      border-radius: 15px;
+      text-shadow: none;
+    }
+  
+    #contact h2, .contact-info {
+      text-align: center;
+      width: 100%
+    }
+  
+    /*.hero-cta, .hero-form {
+      width: 100%;
+    }
+  
+    .hero-cta {
+      text-align: center;
+    }
+  
+    .section-title {
+      width: 80%;
+    }
+    
+    .trainer {
+      flex: 0 70%;
+    }
+    
+    .contact-info iframe{
+      flex: 1 100%;
+    }*/
+  
+  }
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER 
+  @media screen and (max-width: 768px) {
+  /* this will be applied on any screen between 768px and 575px 
+      section {
+      padding: 30px, 15px;
+      }
+  
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;
+    }
+    
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER 
+  @media screen and (max-width: 575px) {
+  /* this will be applied on any screen smaller than 575px 
+    .hero-form {
+      width: 100%;
+    } 
+    
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .trainer {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+  
+    .contact-form {
+      order: 3;
+    }
+  
+  }
