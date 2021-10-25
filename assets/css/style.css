@@ -1,14 +1,17 @@
+/* Color Scheme */
 :root {
     --primary-color: #36454F;
     --secondary-color: #30D5C8;
 }
 
+/* Default Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Flexbox To Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -18,12 +21,14 @@ header {
     height: 50px;
 }
 
+/* Child Element 1 */
 header h1 {
     padding-right: 50px;
     top: 90%;
     bottom: 90%;
 }
 
+/* My Name */
 header h1 a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -31,10 +36,12 @@ header h1 a {
     font-family: cursive;
 }
 
+/* Nav Bar */
 header nav {
     margin: 7px;
 }
 
+/* Child Element 2 */
 header nav ul {
     display: flex;
     justify-content: space-between;
@@ -43,6 +50,7 @@ header nav ul {
     list-style: none;
 }
 
+/* Individual Links */
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
@@ -52,6 +60,7 @@ header nav ul li a {
     color: var(--secondary-color);
 }
 
+/* Purple Background Image */
 .purp {
     background-image: url(../images/purple-background.png);
     background-size: cover;
@@ -65,6 +74,16 @@ header nav ul li a {
     position: relative;
 }
 
+/* Image Of Me */
+.purp img {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 125px;
+    height: 125px;
+}
+
+/* Subtitle 1 */
 .purp h2 {
     width: 300px;
     text-align: center;
@@ -77,19 +96,17 @@ header nav ul li a {
     right: 10%;
 }
 
+/* Background for About Me Section */
 #contents {
     background-color: #FB836F;
 }
 
-/*.vertical {
-    border-right: 6px solid purple;
-    height: 30px;
-}*/
-
-.about-me{
+/* Setting Section Parameters For About Me */
+#contents{
     border-bottom: 3px solid purple;
 }
 
+/* About Me H2 */
 .about-row h2 {
     color: #024e76;
     font-size: 46px;
@@ -98,11 +115,13 @@ header nav ul li a {
     display: inline-block;
 }
 
+/* About Me Tag */
 .about-row h2 a {
     text-decoration: none;
     color: #024e76;
 }
 
+/* About Me Parent Element */
 .about-row {
     width: 80%;
     border-bottom: 1px solid #39a6b2;
@@ -112,10 +131,12 @@ header nav ul li a {
     justify-content: space-between;
 }
 
+/* About Me First Paragraph */
 .about-p1 {
     margin-top: 10px;
 } 
 
+/* Child Container For Both Paragraphs */
 .para-box {
     color: var(--tertiary-color);
     font-size: 18px;
@@ -127,10 +148,12 @@ header nav ul li a {
     border-left: 3px solid purple;
 }
 
+/* Defining New Portfolio Section */
 #work {
     margin-top: 50px;
 }
 
+/* H2 Element Defining Section */
 .production h2 {
     color: #024e76;
     font-size: 60px;
@@ -139,6 +162,7 @@ header nav ul li a {
     margin-right: 35px;
 }
 
+/* Parent Element For Portfolio */
 .production {
     padding-bottom: 50px;
     width: 80%;
@@ -149,6 +173,7 @@ header nav ul li a {
     justify-content: space-between;
 }
 
+/* Child Element Holding Five Containers */
 .flex-container {
     font-size: 18px;
     flex: 5 70%;
@@ -158,9 +183,9 @@ header nav ul li a {
     align-items: center;
 }
 
+/* Container 1/5 */
 #container-one {
-    width: 800px;
-    height: 400px;
+    
     background-image: url(../images/run-buddy.png);
     background-size: cover;
     background-position:left;
@@ -168,8 +193,8 @@ header nav ul li a {
     position: relative;
 }
 
+/* Container Subtitle 1/5 */
 #container-one h2 {
-        width: 125px;
         text-align: center;
         color: #fff;
         font-size: 15px;
@@ -181,20 +206,21 @@ header nav ul li a {
         left: 0;
 }
 
+/* Hiding Clickable Link Behind Image */
 #container-one a {
-    display: block; 
+    display: block;
     height:400px; 
     width:800px; 
     text-indent:-9999px;
 }
 
+/* Hover Over Image 1 */
 #container-one:hover {
     opacity: 60%;
 }
 
+/* Container 2/5 */
 #container-two {
-    width: 400px;
-    height: 135px;
     outline: 3px solid #000000;
     margin-top: 40px;
     background-image: url(../images/calorie-tracker.png);
@@ -203,8 +229,8 @@ header nav ul li a {
     position: relative;
 }
 
+/* Container Subtitle 2/5 */
 #container-two h2 {
-    width: 125px;
     text-align: center;
     color: #fff;
     font-size: 15px;
@@ -216,6 +242,7 @@ header nav ul li a {
     left: 0;
 }
 
+/* Hiding Clickable Link Behind Image */
 #container-two a {
     display: block; 
     height:135px; 
@@ -223,13 +250,13 @@ header nav ul li a {
     text-indent:-9999px;
 }
 
+/* Hover Over Image 2 */
 #container-two:hover {
     opacity: 60%;
 }
 
+/* Container 3/5 */
 #container-three {
-    width: 400px;
-    height: 135px;
     outline: 3px solid #000000;
     margin-top: 40px;
     background-image: url(../images/fed-reserve.png);
@@ -238,6 +265,7 @@ header nav ul li a {
     position: relative;
 }
 
+/* Container Subtitle 3/5 */
 #container-three h2 {
     width: 125px;
     text-align: center;
@@ -251,6 +279,7 @@ header nav ul li a {
     left: 0;
 }
 
+/* Hiding Clickable Link Behind Image */
 #container-three a {
     display: block; 
     height:135px; 
@@ -258,13 +287,13 @@ header nav ul li a {
     text-indent:-9999px;
 }
 
+/* Hover Over Image 3 */
 #container-three:hover {
     opacity: 60%;
 }
 
+/* Container 4/5 */
 #container-four {
-    width: 400px;
-    height: 135px;
     outline: 3px solid #000000;
     margin-top: 40px;
     background-image: url(../images/world-clock.png);
@@ -273,6 +302,7 @@ header nav ul li a {
     position: relative;
 }
 
+/* Container Subtitle 4/5 */
 #container-four h2 {
     width: 125px;
     text-align: center;
@@ -286,6 +316,7 @@ header nav ul li a {
     left: 0;
 }
 
+/* Hiding Clickable Link Behind Image */
 #container-four a {
     display: block; 
     height:135px; 
@@ -293,13 +324,13 @@ header nav ul li a {
     text-indent:-9999px;
 }
 
+/* Hover Over Image 4 */
 #container-four:hover {
     opacity: 60%;
 }
 
+/* Container 5/5 */
 #container-five {
-    width: 400px;
-    height: 135px;
     outline: 3px solid #000000;
     margin-top: 40px;
     background-image: url(../images/mobile-banking.png);
@@ -308,6 +339,7 @@ header nav ul li a {
     position: relative;
 }
 
+/* Container Subtitle 5/5 */
 #container-five h2 {
     width: 125px;
     text-align: center;
@@ -321,6 +353,7 @@ header nav ul li a {
     left: 0;
 }
 
+/* Hiding Clickable Link Behind Image */
 #container-five a {
     display: block; 
     height:135px; 
@@ -328,10 +361,12 @@ header nav ul li a {
     text-indent:-9999px;
 }
 
+/* Hover Over Image 5 */
 #container-five:hover {
     opacity: 60%
 }
 
+/* Parent Wrapper Within Footer */
 #contact {
     background-color: var(--primary-color);
     height: 100%;
@@ -339,6 +374,7 @@ header nav ul li a {
     width: 100%;
 }
 
+/* Child Element 1/2 */
 #contact h2 {
     color: var(--secondary-color);
     font-size: 46px;
@@ -349,12 +385,14 @@ header nav ul li a {
     text-align: right;
 }
 
+/* Div Wrapper for List Items */
 .contact-info {
     line-height: 1.5;
     text-align: center;
     flex: 2 90%;
 }
 
+/* Child Element 2/2 */
 .contact-info ul {
     list-style: none;
     align-items: stretch;
@@ -366,6 +404,7 @@ header nav ul li a {
     height: 100%;
 }
 
+/* List Items */
 .contact-info ul li a {
     color: var(--secondary-color);
     padding: 3px 5px;
@@ -375,6 +414,7 @@ header nav ul li a {
     align-items: center;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
       padding-bottom: 0;
@@ -409,67 +449,88 @@ header nav ul li a {
       width: 100%
     }
   
-    /*.hero-cta, .hero-form {
+    .purp h2 {
       width: 100%;
-    }
-  
-    .hero-cta {
       text-align: center;
     }
   
-    .section-title {
+    .about-row a {
       width: 80%;
     }
     
-    .trainer {
-      flex: 0 70%;
+    .flex-container {
+      flex: 1 70%;
     }
     
-    .contact-info iframe{
+    .contact-info {
       flex: 1 100%;
-    }*/
+    }
+
+    .purp h2 {
+        width: 300px;
+        text-align: center;
+        color: #fff;
+        font-size: 36px;
+        line-height: 1.2;
+        outline: 3px dotted purple;
+        position: absolute;
+        bottom: 25%;
+        right: 10%;
+    }
   
   }
 
-/* MEDIA QUERY FOR TABLETS AND SMALLER 
+ /*MEDIA QUERY FOR TABLETS AND SMALLER*/
   @media screen and (max-width: 768px) {
-  /* this will be applied on any screen between 768px and 575px 
       section {
       padding: 30px, 15px;
       }
+
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
   
-    .step h3 {
+    .about-row a {
       flex: 1 100%;
       text-align: center;
     }
   
-    .step-info {
+    .parabox {
       flex: 2 100%;
       text-align: center;
       justify-content: center;
     }
   
-    .step-img {
+    .flex-container {
       flex: 0 32%;
       margin-right: 0;
       margin-top: 15px;
       margin-bottom: 15px;
     }
-  
-    .step-text {
-      flex: 100%;
+
+    .purp h2 {
+        width: 300px;
+        text-align: center;
+        color: #fff;
+        font-size: 36px;
+        line-height: 1.2;
+        outline: 3px dotted purple;
+        position: absolute;
+        bottom: 25%;
+        right: 10%;
     }
     
   }
   
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER 
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */ 
   @media screen and (max-width: 575px) {
-  /* this will be applied on any screen smaller than 575px 
-    .hero-form {
+    .purp h2 {
       width: 100%;
     } 
     
-    .section-title {
+    .about-row a {
       width: 95%;
     }
   
@@ -477,7 +538,7 @@ header nav ul li a {
       width: 100%;
     }
   
-    .trainer {
+    .flex-item {
       flex: 0 100%;
     }
   
@@ -489,8 +550,20 @@ header nav ul li a {
       flex: 0 100%;
     }
   
-    .contact-form {
-      order: 3;
+    .contact-info {
+      order: 5;
+    }
+
+    .purp h2 {
+        width: 300px;
+        text-align: center;
+        color: #fff;
+        font-size: 36px;
+        line-height: 1.2;
+        outline: 3px dotted purple;
+        position: absolute;
+        bottom: 25%;
+        right: 10%;
     }
   
   }
