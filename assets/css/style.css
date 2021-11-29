@@ -297,7 +297,7 @@ header nav ul li a {
     outline: 3px solid #000000;
     margin-top: 40px;
     background-image: url(../images/run-buddy.png);
-    background-size: 70%;
+    background-size: 100%;
     background-position:center;
     position: relative;
 }
